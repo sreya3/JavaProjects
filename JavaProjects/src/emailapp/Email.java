@@ -79,4 +79,16 @@ public class Email {
 		this.password = password;
 		System.out.println("You have changed your password to: " + this.password);
 	}
+	
+	public int getMailboxCapacity() {
+		return mailboxCapacity;
+	}
+	
+	public String getAlternateEmail() {
+		return alternateEmail;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
 }
