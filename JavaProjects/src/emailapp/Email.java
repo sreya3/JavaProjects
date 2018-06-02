@@ -10,6 +10,8 @@ public class Email {
 	private String department;
 	private int mailboxCapacity;
 	private String alternateEmail;
+	private String email;
+	private String companySuffix = "mycompany.com";
 	
 	
 	//Constructor
@@ -25,9 +27,12 @@ public class Email {
 		//call method to generate random password
 		this.password = randomPassword(defaultPasswordLength);
 		System.out.println("Your Password: " + this.password);
-	}
 	
-	//ask for department
+		//generate email
+		email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
+		System.out.println("Email address: " + email);
+	}
+		
 	private String setDepartment() {
 		System.out.println("DEPARTMENT CODES\n1 for Sales\n2 for Development\n3 for Accounting\n0 for none\nEnter department code:");
 		Scanner in = new Scanner(System.in);
