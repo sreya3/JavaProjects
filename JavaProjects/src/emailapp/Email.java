@@ -30,7 +30,7 @@ public class Email {
 	
 		//generate email
 		email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + companySuffix;
-		System.out.println("Email address: " + email);
+		//System.out.println("Email address: " + email);
 	}
 		
 	private String setDepartment() {
@@ -90,5 +90,11 @@ public class Email {
 	
 	public String getPassword() {
 		return password;
+	}
+	
+	public void displayInfo() {
+		System.out.println("DISPLAY NAME: " + firstName + " " + lastName + 
+				"\nCOMPANY EMAIL: " + email + 
+				"\nMAILBOX CAPACITY: " + mailboxCapacity + "MB");
 	}
 }
