@@ -65,15 +65,18 @@ public class Email {
 	//set mailbox capacity
 	public void setMailboxCapacity(int capacity) {
 		this.mailboxCapacity = capacity;
+		System.out.println("Your new mailbox capacity: "+ this.mailboxCapacity);
 	}
 	
 	//set the alternate email
 	public void setAlternateEmail(String altEmail) {
 		this.alternateEmail = altEmail;
+		System.out.println("Your alternate email: " + this.alternateEmail);
 	}
 	
 	//change password
 	public void changePassword(String password) {
 		this.password = password;
+		System.out.println("You have changed your password to: " + this.password);
 	}
 }
