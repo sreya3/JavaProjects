@@ -23,8 +23,6 @@ public class Student {
 		this.gradeYear = in.nextInt();
 		
 		setStudentId();
-		System.out.println(firstName + " " + lastName + " " + gradeYear + " " + studentId);
-		
 		//in.close();
 	}
 	
@@ -63,5 +61,13 @@ public class Student {
 
 		System.out.println("Thank for your payment of: "+ payment);
 		viewBalance();
+	}
+	
+	public String toString() {
+		return "Name: " + firstName + " " + lastName +
+				"\nGrade Level " + gradeYear + 
+				"\nStudent ID: " + studentId + 
+				"\nCourses Enrolled: " + courses + 
+				"\nTuition Balance: " + tuitionBalance;
 	}
 }
